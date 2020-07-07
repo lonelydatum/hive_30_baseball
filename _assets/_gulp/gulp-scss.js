@@ -4,6 +4,8 @@ var gulp_sass       = require('gulp-sass');
 var notify          = require("gulp-notify");
 var autoprefixer    = require('gulp-autoprefixer');
 
+gulp_sass.compiler = require('node-sass');
+
 function buildSass(name, browserSync){
     var entry = './dev/'+name+'/_styles/scss/main.scss';
     return gulp.src(entry)   

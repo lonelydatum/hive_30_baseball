@@ -4,24 +4,27 @@
 
 
 
-// .frame1 {
+.frame1 {
 	// opacity: 1;
-// }
+}
+
+.illust{
+	transform-origin: 50% 100%;
+}
+
+#legalBtn{	
+	top: 198px;
+	left: 7px;
+	position: absolute;
+}
 
 
-// .illust{
-
-// 	transform-origin: 50% 100%;
-// 	@include pos(0, 0);
-// }
-
-
-// #banner{
-// 	font-size: 20px;
-// 	color: #333;
-// 	width: 300px;
-// 	height: 250px;
-// }
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 300px;
+	height: 250px;
+}
 
 
 // #legalBtn{	
