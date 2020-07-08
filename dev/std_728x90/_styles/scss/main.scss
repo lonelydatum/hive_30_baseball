@@ -10,7 +10,7 @@
 
 
 .ball{
-	@include pos(0, 0);
+	@include pos-scale(-15, 2, .5);
 }
 
 .batter_all {
