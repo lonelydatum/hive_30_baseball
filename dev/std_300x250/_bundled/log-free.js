@@ -69,9 +69,9 @@ function start() {
 	// tl.gotoAndPlay("f2")
 }
 
-(0, _commonJsCommonJs.batter)();
+// batter()
 
-// start()
+start();
 
 module.exports = {};
 

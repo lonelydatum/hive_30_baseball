@@ -35,9 +35,9 @@ function start(){
 	// tl.gotoAndPlay("f2")
 }
 
-batter()
+// batter()
 
-// start()
+start()
 
 module.exports = {};
 
