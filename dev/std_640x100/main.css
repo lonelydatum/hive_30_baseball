@@ -157,21 +157,6 @@ sup {
   image-rendering: -webkit-optimize-contrast;
 }
 
-.retina4 {
-  -webkit-transform: translate(0px, 0px) scale(0.25, 0.25);
-  -ms-transform: translate(0px, 0px) scale(0.25, 0.25);
-  transform: translate(0px, 0px) scale(0.25, 0.25);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  image-rendering: -webkit-optimize-contrast;
-}
-
 #legalBtn:hover ~ #legalContent {
   opacity: 1;
 }
@@ -196,7 +181,7 @@ sup {
   opacity: 0;
   font-weight: normal;
   line-height: 14px;
-  transition: opacity 0.3s;
+  transition: opacity .3s;
   pointer-events: none;
 }
 
@@ -230,51 +215,26 @@ sup {
   opacity: 0;
 }
 
-.frame1 {
-  opacity: 1;
-}
-
-.ball {
-  -webkit-transform: translate(-15px, 2px) scale(0.5, 0.5);
-  -ms-transform: translate(-15px, 2px) scale(0.5, 0.5);
-  transform: translate(-15px, 2px) scale(0.5, 0.5);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-.batter_all {
-  -webkit-transform: translate(-30px, -112px) scale(-0.62, 0.62);
-  -ms-transform: translate(-30px, -112px) scale(-0.62, 0.62);
-  transform: translate(-30px, -112px) scale(-0.62, 0.62);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
+#banner {
+  font-size: 20px;
+  color: #333;
   width: 300px;
   height: 250px;
 }
 
-.illust {
-  -webkit-transform-origin: 175px 90px;
-  -ms-transform-origin: 175px 90px;
-  transform-origin: 175px 90px;
-}
-
 #legalBtn {
-  top: 50px;
-  left: 7px;
+  
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
   position: absolute;
 }
 
-#banner {
-  font-size: 20px;
-  color: #333;
-  width: 728px;
-  height: 90px;
+.illust {
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -230,14 +230,21 @@ sup {
   opacity: 0;
 }
 
-.frame1 {
-  opacity: 1;
+.ball {
+  -webkit-transform: translate(-7px, 8px) scale(0.5, 0.5);
+  -ms-transform: translate(-7px, 8px) scale(0.5, 0.5);
+  transform: translate(-7px, 8px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
 }
 
-.ball {
-  -webkit-transform: translate(-15px, 2px) scale(0.5, 0.5);
-  -ms-transform: translate(-15px, 2px) scale(0.5, 0.5);
-  transform: translate(-15px, 2px) scale(0.5, 0.5);
+.hero_batter_9 {
+  -webkit-transform: translate(-150px, -125px) scale(0.5, 0.5);
+  -ms-transform: translate(-150px, -125px) scale(0.5, 0.5);
+  transform: translate(-150px, -125px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -246,9 +253,9 @@ sup {
 }
 
 .batter_all {
-  -webkit-transform: translate(-30px, -112px) scale(-0.62, 0.62);
-  -ms-transform: translate(-30px, -112px) scale(-0.62, 0.62);
-  transform: translate(-30px, -112px) scale(-0.62, 0.62);
+  -webkit-transform: translate(-94px, -117px) scale(-0.47, 0.47);
+  -ms-transform: translate(-94px, -117px) scale(-0.47, 0.47);
+  transform: translate(-94px, -117px) scale(-0.47, 0.47);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -258,10 +265,14 @@ sup {
   height: 250px;
 }
 
+.batter_all .batter {
+  opacity: 0;
+}
+
 .illust {
-  -webkit-transform-origin: 175px 90px;
-  -ms-transform-origin: 175px 90px;
-  transform-origin: 175px 90px;
+  -webkit-transform-origin: 35% 100%;
+  -ms-transform-origin: 35% 100%;
+  transform-origin: 35% 100%;
 }
 
 #legalBtn {
@@ -273,8 +284,8 @@ sup {
 #banner {
   font-size: 20px;
   color: #333;
-  width: 728px;
-  height: 90px;
+  width: 320px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -157,6 +157,21 @@ sup {
   image-rendering: -webkit-optimize-contrast;
 }
 
+.retina4 {
+  -webkit-transform: translate(0px, 0px) scale(0.25, 0.25);
+  -ms-transform: translate(0px, 0px) scale(0.25, 0.25);
+  transform: translate(0px, 0px) scale(0.25, 0.25);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  image-rendering: -webkit-optimize-contrast;
+}
+
 #legalBtn:hover ~ #legalContent {
   opacity: 1;
 }
