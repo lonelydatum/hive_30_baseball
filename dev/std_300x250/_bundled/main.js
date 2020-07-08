@@ -1,13 +1,34 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 "use strict";
 
+function batter() {
+	var tl = new TimelineMax();
+	TweenLite.to(".hero_batter_bg", .3, { opacity: 1 });
+	TweenLite.from([".batter_all"], 2, { x: "+=6", ease: Power2.easeOut });
+	TweenLite.from([".ball"], 1, { x: "-=20", ease: Power2.easeOut });
+	var list = [".hero_batter_1", ".hero_batter_3", ".hero_batter_5", ".hero_batter_7", ".hero_batter_9"];
+	list.map(function (item, index) {
+
+		var time = "+=" + index * .022;
+		var notIt = list.filter(function (f) {
+			return f !== item;
+		});
+		tl.add("frame", time);
+		tl.set(notIt, { opacity: 0 }, "frame");
+		tl.set(item, { opacity: 1 }, "frame");
+	});
+
+	return tl;
+}
+
 function start() {
 	TweenLite.defaultEase = Power3.easeInOut;
 	var tl = new TimelineMax();
 
 	tl.set(".frame1", { opacity: 1 });
-	tl.from(".t1_a", .01, { opacity: 0 }, "+=.2");
-	tl.from([".t1_b", ".t1_c"], .01, { opacity: 0 }, "+=.7");
+	tl.add(batter());
+	tl.from(".t1_a", .01, { opacity: 0 }, "+=.1");
+	tl.from([".t1_b", ".t1_c"], .01, { opacity: 0 }, "+=.4");
 
 	tl.from(".hero_a", .6, { opacity: .8 }, 0);
 
@@ -28,6 +49,8 @@ function start() {
 
 	// tl.gotoAndPlay("f2")
 }
+
+// batter()
 
 start();
 
