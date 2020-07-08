@@ -10,7 +10,7 @@ function batter(){
 		const time = `-=${index*.01}`
 		const notIt = list.filter(f=>f!==item)
 		tl.add("frame", time)
-		tl.to(notIt, .15, {opacity:0}, "frame")
+		tl.to(notIt, .11, {opacity:0}, "frame")
 		tl.set(item, {opacity:1}, "frame")
 	})
 
