@@ -1,36 +1,20 @@
 
-function batter(){
-	const tl = new TimelineMax()
-	TweenLite.to(".hero_batter_bg", .5, {opacity:1})
-	TweenLite.from([".batter_all"], 2, {x:"+=5", ease:Power2.easeOut})
-	TweenLite.from([".ball"], 1, {x:"-=20", ease:Power2.easeOut})
-	const list = [".hero_batter_1", ".hero_batter_3", ".hero_batter_5", ".hero_batter_7", ".hero_batter_9"]
-	list.map((item, index)=>{
-
-		const time = `-=${index*.01}`
-		const notIt = list.filter(f=>f!==item)
-		tl.add("frame", time)
-		tl.to(notIt, .11, {opacity:0}, "frame")
-		tl.set(item, {opacity:1}, "frame")
-	})
-
-	return tl
-}
+import {batter} from '../../_common/js/common.js'
 
 
 function start(){
 	TweenLite.defaultEase = Power3.easeInOut
 	const tl = new TimelineMax()
 
-	
+	TweenLite.from([".ball"], 1, {x:"-=20", ease:Power2.easeOut})
 	
 	tl.set(".frame1", {opacity:1})
-	tl.add(batter())
+	tl.add(batter({ball:"-=20", bat:"+=5"}))
 	tl.from(".t1_a", .01, {opacity:0}, "+=.1")
 	tl.from([".t1_b", ".t1_c"], .01, {opacity:0}, "+=.4")
 	
 
-	tl.from(".hero_a", .6, {opacity:.8}, 0)
+	// tl.from(".hero_a", .6, {opacity:.8}, 0)
 
 	tl.add("f2", 3.1)
 	tl.to(".frame1", .3, {opacity:0}, "f2")
@@ -51,9 +35,9 @@ function start(){
 	// tl.gotoAndPlay("f2")
 }
 
-// batter()
+batter()
 
-start()
+// start()
 
 module.exports = {};
 
