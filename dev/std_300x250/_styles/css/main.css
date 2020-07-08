@@ -216,9 +216,9 @@ sup {
 }
 
 .ball {
-  -webkit-transform: translate(-8px, 5px);
-  -ms-transform: translate(-8px, 5px);
-  transform: translate(-8px, 5px);
+  -webkit-transform: translate(-10px, 5px);
+  -ms-transform: translate(-10px, 5px);
+  transform: translate(-10px, 5px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

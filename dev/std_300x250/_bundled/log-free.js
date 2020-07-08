@@ -40,12 +40,12 @@ function start() {
 	tl.from('.phone', .4, { y: "+=100", ease: Power3.easeOut }, "phone_move");
 	tl.from('.illust', .3, { scale: 0 }, "phone_move+=.3");
 
-	tl.from('.t2', .01, { opacity: 0 }, "+=.3");
+	tl.from(['.t2', '.legal'], .01, { opacity: 0 }, "+=.3");
 	tl.from('.cta', .1, { opacity: 0 }, "+=1.4");
 	tl.to('.cta', .2, { opacity: 0 }, "+=2.3");
 	tl.from('.cta2', .3, { opacity: 0 });
 
-	tl.from('.legal', .3, { opacity: 0 }, "+=.1");
+	// tl.from('.legal', .3, {opacity:0}, "+=.1")
 
 	// tl.gotoAndPlay("f2")
 }
