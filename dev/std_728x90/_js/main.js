@@ -17,7 +17,7 @@ function start(){
 	tl.set(".frame2", {opacity:1}, "f2")
 
 	tl.add("phone_move")
-	tl.from('.phone', .4, {y:"+=100", ease:Power3.easeOut}, "phone_move")
+	tl.from('.phone', .3, {y:"+=100", ease:Power3.easeOut}, "phone_move")
 	tl.from('.illust', .3, {scale:0}, "phone_move+=.3")
 
 	tl.from('.t2', .01, {opacity:0}, "+=.3")
