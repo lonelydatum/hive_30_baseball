@@ -10,6 +10,8 @@ var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 TweenLite.defaultEase = Power2.easeInOut;
 
 function batter(obj) {
+	var speed = arguments.length <= 1 || arguments[1] === undefined ? .11 : arguments[1];
+
 	console.log(obj);
 	var tl = new TimelineMax();
 	TweenLite.to(".hero_batter_bg", .3, { opacity: 1 });
@@ -23,7 +25,7 @@ function batter(obj) {
 			return f !== item;
 		});
 		tl.add("frame", time);
-		tl.to(notIt, .11, { opacity: 0 }, "frame");
+		tl.to(notIt, speed, { opacity: 0 }, "frame");
 		tl.set(item, { opacity: 1 }, "frame");
 	});
 
@@ -45,13 +47,13 @@ function start() {
 	TweenLite.from([".ball"], 1, { x: "-=20", ease: Power2.easeOut });
 
 	tl.set(".frame1", { opacity: 1 });
-	tl.add((0, _commonJsCommonJs.batter)({ ball: "-=30", bat: "+=5" }));
+	(0, _commonJsCommonJs.batter)({ ball: "-=30", bat: "+=5" }, .3);
 	tl.from(".t1_a", .01, { opacity: 0 }, "+=.1");
 	tl.from([".t1_b", ".t1_c"], .01, { opacity: 0 }, "+=.4");
 
 	// tl.from(".hero_a", .6, {opacity:.8}, 0)
 
-	tl.add("f2", 3.1);
+	tl.add("f2", 2);
 	tl.to(".frame1", .3, { opacity: 0 }, "f2");
 	tl.set(".frame2", { opacity: 1 }, "f2");
 

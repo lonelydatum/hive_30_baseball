@@ -3,7 +3,7 @@ const size = {w:banner.offsetWidth, h:banner.offsetHeight}
 
 TweenLite.defaultEase = Power2.easeInOut
 
-function batter(obj){
+function batter(obj, speed=.11){
 	console.log(obj);
 	const tl = new TimelineMax()
 	TweenLite.to(".hero_batter_bg", .3, {opacity:1})
@@ -15,7 +15,7 @@ function batter(obj){
 		const time = `-=${index*.01}`
 		const notIt = list.filter(f=>f!==item)
 		tl.add("frame", time)
-		tl.to(notIt, .11, {opacity:0}, "frame")
+		tl.to(notIt, speed, {opacity:0}, "frame")
 		tl.set(item, {opacity:1}, "frame")
 	})
 

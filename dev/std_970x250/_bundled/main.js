@@ -10,6 +10,8 @@ var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 TweenLite.defaultEase = Power2.easeInOut;
 
 function batter(obj) {
+	var speed = arguments.length <= 1 || arguments[1] === undefined ? .11 : arguments[1];
+
 	console.log(obj);
 	var tl = new TimelineMax();
 	TweenLite.to(".hero_batter_bg", .3, { opacity: 1 });
@@ -23,7 +25,7 @@ function batter(obj) {
 			return f !== item;
 		});
 		tl.add("frame", time);
-		tl.to(notIt, .11, { opacity: 0 }, "frame");
+		tl.to(notIt, speed, { opacity: 0 }, "frame");
 		tl.set(item, { opacity: 1 }, "frame");
 	});
 
