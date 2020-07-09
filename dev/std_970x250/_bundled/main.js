@@ -48,7 +48,7 @@ function start() {
 
 	tl.set(".frame1", { opacity: 1 });
 
-	tl.add((0, _commonJsCommonJs.batter)({ ball: "+=20", bat: "-=5" }));
+	(0, _commonJsCommonJs.batter)({ ball: "+=20", bat: "-=5" });
 
 	tl.from(".t1_a", .01, { opacity: 0 });
 	tl.from(".t1_b", .01, { opacity: 0 }, "+=.4");
