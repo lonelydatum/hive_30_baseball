@@ -11,7 +11,7 @@ function start(){
 
 	batter({ball:"+=20", bat:"-=5"})
 
-	tl.from(".t1_a", .01, {opacity:0})
+	tl.from(".t1_a", .01, {opacity:0}, "+=.2")
 	tl.from(".t1_b", .01, {opacity:0}, "+=.4")
 	// tl.from(".t1_c", .01, {opacity:0}, "+=.3")
 	
