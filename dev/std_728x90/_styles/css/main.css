@@ -230,10 +230,6 @@ sup {
   opacity: 0;
 }
 
-.frame1 {
-  opacity: 1;
-}
-
 .ball {
   -webkit-transform: translate(-15px, 2px) scale(0.5, 0.5);
   -ms-transform: translate(-15px, 2px) scale(0.5, 0.5);
