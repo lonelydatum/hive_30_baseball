@@ -10,7 +10,7 @@ var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 TweenLite.defaultEase = Power2.easeInOut;
 
 function batter(obj) {
-	var speed = arguments.length <= 1 || arguments[1] === undefined ? .11 : arguments[1];
+	var speed = arguments.length <= 1 || arguments[1] === undefined ? .3 : arguments[1];
 
 	void 0;
 	var tl = new TimelineMax();
@@ -47,7 +47,7 @@ function start() {
 	TweenLite.from([".ball"], 1, { x: "-=20", ease: Power2.easeOut });
 
 	tl.set(".frame1", { opacity: 1 });
-	(0, _commonJsCommonJs.batter)({ ball: "-=30", bat: "+=5" }, .3);
+	(0, _commonJsCommonJs.batter)({ ball: "-=30", bat: "+=5" });
 	tl.from(".t1_a", .01, { opacity: 0 }, "+=.1");
 	tl.from([".t1_b", ".t1_c"], .01, { opacity: 0 }, "+=.4");
 

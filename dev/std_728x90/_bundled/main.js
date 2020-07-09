@@ -10,7 +10,7 @@ var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 TweenLite.defaultEase = Power2.easeInOut;
 
 function batter(obj) {
-	var speed = arguments.length <= 1 || arguments[1] === undefined ? .11 : arguments[1];
+	var speed = arguments.length <= 1 || arguments[1] === undefined ? .3 : arguments[1];
 
 	console.log(obj);
 	var tl = new TimelineMax();

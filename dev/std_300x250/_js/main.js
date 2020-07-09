@@ -9,7 +9,7 @@ function start(){
 	TweenLite.from([".ball"], 1, {x:"-=20", ease:Power2.easeOut})
 	
 	tl.set(".frame1", {opacity:1})
-	batter({ball:"-=30", bat:"+=5"}, .3)
+	batter({ball:"-=30", bat:"+=5"})
 	tl.from(".t1_a", .01, {opacity:0}, "+=.1")
 	tl.from([".t1_b", ".t1_c"], .01, {opacity:0}, "+=.4")
 	

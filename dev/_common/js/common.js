@@ -3,7 +3,7 @@ const size = {w:banner.offsetWidth, h:banner.offsetHeight}
 
 TweenLite.defaultEase = Power2.easeInOut
 
-function batter(obj, speed=.11){
+function batter(obj, speed=.3){
 	console.log(obj);
 	const tl = new TimelineMax()
 	TweenLite.to(".hero_batter_bg", .3, {opacity:1})
