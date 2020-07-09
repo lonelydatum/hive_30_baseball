@@ -231,9 +231,20 @@ sup {
 }
 
 .ball {
-  -webkit-transform: translate(-15px, 2px) scale(0.5, 0.5);
-  -ms-transform: translate(-15px, 2px) scale(0.5, 0.5);
-  transform: translate(-15px, 2px) scale(0.5, 0.5);
+  -webkit-transform: translate(-100px, 4px) scale(0.7, 0.7);
+  -ms-transform: translate(-100px, 4px) scale(0.7, 0.7);
+  transform: translate(-100px, 4px) scale(0.7, 0.7);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.catcher {
+  -webkit-transform: translate(-80px, -6px) scale(0.7, 0.7);
+  -ms-transform: translate(-80px, -6px) scale(0.7, 0.7);
+  transform: translate(-80px, -6px) scale(0.7, 0.7);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -242,9 +253,9 @@ sup {
 }
 
 .batter_all {
-  -webkit-transform: translate(-30px, -112px) scale(-0.62, 0.62);
-  -ms-transform: translate(-30px, -112px) scale(-0.62, 0.62);
-  transform: translate(-30px, -112px) scale(-0.62, 0.62);
+  -webkit-transform: translate(-60px, -112px) scale(-0.82, 0.82);
+  -ms-transform: translate(-60px, -112px) scale(-0.82, 0.82);
+  transform: translate(-60px, -112px) scale(-0.82, 0.82);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
