@@ -16,7 +16,7 @@ function batter(obj) {
 	var tl = new TimelineMax();
 	TweenLite.to(".hero_batter_bg", .3, { opacity: 1 });
 	TweenLite.from([".batter_all"], 2, { x: obj.bat, ease: Power2.easeOut });
-	TweenLite.from([".ball"], 1, { x: obj.ball, ease: Power2.easeOut });
+	TweenLite.from([".ball"], 2, { x: obj.ball, ease: Power2.easeOut });
 	var list = [".hero_batter_1", ".hero_batter_3", ".hero_batter_5", ".hero_batter_7", ".hero_batter_9"];
 	list.map(function (item, index) {
 
