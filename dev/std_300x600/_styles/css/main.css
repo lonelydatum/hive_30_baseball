@@ -254,6 +254,10 @@ sup {
   height: 600px;
 }
 
+.batter_all .batter {
+  opacity: 0;
+}
+
 .illust {
   -webkit-transform-origin: 50% 460px;
   -ms-transform-origin: 50% 460px;
